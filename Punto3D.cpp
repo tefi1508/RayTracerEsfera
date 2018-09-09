@@ -42,6 +42,14 @@ Vector3D Punto3D::operator-(Punto3D p){
     return resultado;
 }
 
+Punto3D Punto3D::operator*(double n){
+    Punto3D resultado;
+    resultado.x = x * n;
+    resultado.y = y * n;
+    resultado.z = z * n;
+    return resultado;
+}
+
 Punto3D operator* (double n, Punto3D p){
     Punto3D resultado;
     resultado.x = n*p.x;
@@ -49,8 +57,6 @@ Punto3D operator* (double n, Punto3D p){
     resultado.z = n*p.z;
     return resultado;
 }
-
-
 
 void Punto3D::mostrarCoor(){
     cout<<"Xp: "<<x<<" Yp: "<<y<<" Zp: "<<z<<endl;

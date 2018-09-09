@@ -15,5 +15,8 @@ int main(int argc, char const *argv[])
     cout<<endl<<endl;
     Vector3D resta = p - r;
     resta.mostrarCoor();
+    cout<<endl<<endl;
+    Punto3D producto2 = r * 3;
+    producto2.mostrarCoor();
     return 0;
 }
